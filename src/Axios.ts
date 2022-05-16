@@ -1,5 +1,4 @@
-function Axios(config) {
-}
+function Axios(config) {}
 
 Axios.prototype.get = () => {
     console.log('get')
