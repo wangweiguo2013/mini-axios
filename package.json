@@ -15,5 +15,9 @@
     "url": "https://github.com/wangweiguo2013/mini-axios/issues"
   },
   "homepage": "https://github.com/wangweiguo2013/mini-axios#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "rollup": "^2.73.0"
+  }
 }
