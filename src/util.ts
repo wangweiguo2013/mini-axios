@@ -10,3 +10,7 @@ export const extend = (a, b) => {
         a[key] = val
     })
 }
+
+export const merge = (a, b) => {
+    return { ...a, ...b }
+}

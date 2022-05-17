@@ -1,7 +1,10 @@
 import axios from '../../lib/mini-axios.esm.js'
 
 console.log('axios', axios)
+window.axios = axios
 
-axios({ bar: 'bar' })
+const p = axios({ bar: 'bar' })
+console.log(p)
 
-axios.request({ foo: 'foo' })
+const p1 = axios.request({ foo: 'foo' })
+console.log(p1)

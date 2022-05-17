@@ -8,6 +8,7 @@ function createInstance(config) {
     const context = new Axios(config)
     const instance: any = bind(Axios.prototype.request, context)
     extend(instance, Axios.prototype)
+    extend(instance, context)
     instance.create = function (config) {
         return createInstance(config)
     }

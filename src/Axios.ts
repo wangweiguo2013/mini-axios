@@ -16,7 +16,16 @@ Axios.prototype.patch = () => {
 Axios.prototype.delete = () => {
     console.log('delete')
 }
+Axios.prototype.head = () => {
+    console.log('head')
+}
+Axios.prototype.options = () => {
+    console.log('head')
+}
 Axios.prototype.request = () => {
     console.log('request')
+    return new Promise((resolve) => {
+        resolve({})
+    })
 }
 export default Axios
