@@ -1,4 +1,6 @@
-function Axios(config) {}
+function Axios(instanceConfig) {
+    this.defaults = instanceConfig
+}
 
 Axios.prototype.get = () => {
     console.log('get')

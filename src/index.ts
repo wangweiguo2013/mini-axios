@@ -1,8 +1,8 @@
 import Axios from './Axios'
+import defaults from './defaults'
 import { bind, extend } from './util'
-const defaultConfig = {}
 
-const axios = createInstance(defaultConfig)
+const axios = createInstance(defaults)
 
 function createInstance(config) {
     const context = new Axios(config)

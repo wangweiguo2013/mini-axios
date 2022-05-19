@@ -1,4 +1,4 @@
-import axios from '../src/index'
+import axios from '../../src/index'
 describe('static apis', () => {
     it('should have request method helpers', function () {
         expect(typeof axios.request).toEqual('function')
@@ -15,5 +15,9 @@ describe('static apis', () => {
 
         expect(typeof promise.then).toEqual('function')
         expect(typeof promise.catch).toEqual('function')
+    })
+    it('should have defaults', function () {
+        expect(typeof axios.defaults).toEqual('object')
+        expect(typeof axios.defaults.headers).toEqual('object')
     })
 })
