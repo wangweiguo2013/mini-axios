@@ -20,4 +20,8 @@ describe('static apis', () => {
         expect(typeof axios.defaults).toEqual('object')
         expect(typeof axios.defaults.headers).toEqual('object')
     })
+    it('should have interceptors', function () {
+        expect(typeof axios.interceptors.request).toEqual('object')
+        expect(typeof axios.interceptors.response).toEqual('object')
+    })
 })
