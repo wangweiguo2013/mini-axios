@@ -10,16 +10,19 @@ describe('static apis', () => {
         expect(typeof axios.put).toEqual('function')
         expect(typeof axios.patch).toEqual('function')
     })
+
     it('should have promise method helpers', function () {
         const promise = axios('/test')
 
         expect(typeof promise.then).toEqual('function')
         expect(typeof promise.catch).toEqual('function')
     })
+
     it('should have defaults', function () {
         expect(typeof axios.defaults).toEqual('object')
         expect(typeof axios.defaults.headers).toEqual('object')
     })
+
     it('should have interceptors', function () {
         expect(typeof axios.interceptors.request).toEqual('object')
         expect(typeof axios.interceptors.response).toEqual('object')

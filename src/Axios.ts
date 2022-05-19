@@ -1,3 +1,7 @@
+import { xhrAdapter } from './adapters/xhr'
+import defaults from './defaults'
+import InterceptorManager from './InterceptorManager'
+
 function Axios(instanceConfig) {
     this.defaults = instanceConfig
     this.interceptors = {
@@ -28,10 +32,10 @@ Axios.prototype.head = () => {
 Axios.prototype.options = () => {
     console.log('head')
 }
-Axios.prototype.request = () => {
-    console.log('request')
-    return new Promise((resolve) => {
-        resolve({ data: 1 })
-    })
+Axios.prototype.request = (url) => {
+    const adapter = defaults.adapter
+    const config = { url }
+    console.log('request', url)
+    return adapter(config)
 }
 export default Axios

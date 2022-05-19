@@ -29,3 +29,5 @@ class InterceptorManager {
         })
     }
 }
+
+export default InterceptorManager
