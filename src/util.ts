@@ -1,6 +1,6 @@
 export const bind = (fn, thisArg, ...args) => {
     return function () {
-        fn.call(thisArg, ...args)
+        return fn.call(thisArg, ...args)
     }
 }
 

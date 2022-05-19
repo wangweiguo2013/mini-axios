@@ -25,7 +25,7 @@ Axios.prototype.options = () => {
 Axios.prototype.request = () => {
     console.log('request')
     return new Promise((resolve) => {
-        resolve({})
+        resolve({ data: 1 })
     })
 }
 export default Axios
